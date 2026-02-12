@@ -1,168 +1,298 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>NimbusTech Solutions Knowledge Base</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NovaWorks Technologies</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height:1.6;
+    background:#ffffff;
+}
+
+/* NAVBAR */
+nav{
+    background:#0b1f3a;
+    color:white;
+    padding:15px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-weight:bold;
+}
+nav a:hover{color:#00c3ff}
+
+/* HERO */
+.hero{
+    background:linear-gradient(rgba(11,31,58,.85),rgba(11,31,58,.85)),
+    url("https://images.unsplash.com/photo-1531297484001-80022131f5a1");
+    background-size:cover;
+    color:white;
+    padding:120px 40px;
+    text-align:center;
+}
+.hero h1{font-size:48px;margin-bottom:10px}
+.hero p{font-size:20px}
+
+/* SECTIONS */
+section{padding:60px 40px}
+.section-gray{background:#f5f7fb}
+
+/* PRODUCT CARDS */
+.products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+.card{
+    border:1px solid #ddd;
+    border-radius:10px;
+    padding:20px;
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+    transition:.3s;
+}
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+}
+.card h3{color:#0b1f3a}
+
+/* PRICING */
+.pricing ul{list-style:square}
+
+/* FAQ */
+.faq-item{
+    border-bottom:1px solid #ddd;
+    margin-bottom:10px;
+}
+.faq-question{
+    cursor:pointer;
+    padding:15px;
+    background:#eef3ff;
+    font-weight:bold;
+}
+.faq-answer{
+    display:none;
+    padding:15px;
+}
+
+/* FORM */
+form input, form textarea, form select{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+button{
+    background:#0b1f3a;
+    color:white;
+    padding:12px 25px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+button:hover{background:#143d6b}
+
+/* FOOTER */
+footer{
+    background:#0b1f3a;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+</style>
 </head>
 
 <body>
 
-<h1>NimbusTech Solutions - Product Knowledge Base</h1>
+<!-- NAVBAR -->
+<nav>
+<h2>NovaWorks</h2>
+<div>
+<a href="#about">About</a>
+<a href="#products">Products</a>
+<a href="#pricing">Licensing</a>
+<a href="#faq">FAQ</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
 
-<p>NimbusTech Solutions is a cloud software provider offering business applications for sales, marketing, analytics, billing, and customer support teams. All products are subscription-based and hosted in the cloud.</p>
+<!-- HERO -->
+<div class="hero">
+<h1>NovaWorks Technologies</h1>
+<p>Design. Simulate. Manufacture. All in One Platform.</p>
+<p>Trusted by 120,000+ engineers worldwide</p>
+</div>
 
-<hr>
+<!-- ABOUT -->
+<section id="about">
+<h2>About Us</h2>
+<p>
+NovaWorks Technologies is a cloud engineering software company providing professional
+design, simulation, and manufacturing tools for engineers, architects, and product designers.
+Our platform enables teams to collaborate, prototype, and manufacture faster using AI-powered tools.
+</p>
 
-<h2>Product 1: NimbusCRM</h2>
-
-<h3>Overview</h3>
-<p>NimbusCRM is a customer relationship management system that helps companies manage leads, contacts, and sales opportunities.</p>
-
-<h3>Key Features</h3>
+<h3>Industries We Serve</h3>
 <ul>
-<li>Lead tracking</li>
-<li>Opportunity pipeline management</li>
-<li>Email integration</li>
-<li>Task reminders</li>
-<li>Mobile access</li>
+<li>Manufacturing</li>
+<li>Architecture & Construction</li>
+<li>Automotive</li>
+<li>Aerospace</li>
+<li>Industrial Design</li>
+<li>Education & Research</li>
 </ul>
+</section>
 
-<h3>Pricing</h3>
-<p>Starter: $25 per user per month</p>
-<p>Professional: $55 per user per month</p>
-<p>Enterprise: $95 per user per month</p>
+<!-- PRODUCTS -->
+<section id="products" class="section-gray">
+<h2>Our Products</h2>
 
-<h3>Best Use Case</h3>
-<p>Best suited for sales teams and account managers.</p>
+<div class="products">
 
-<hr>
+<div class="card">
+<h3>NovaCAD</h3>
+<p>Professional 2D & 3D CAD design software for drafting, assemblies, and parametric modeling.</p>
+<b>License:</b> Subscription (Monthly / Annual)
+</div>
 
-<h2>Product 2: NimbusDesk</h2>
+<div class="card">
+<h3>NovaSim</h3>
+<p>Advanced simulation and stress analysis for thermal, structural, and motion testing.</p>
+<b>License:</b> Annual License
+</div>
 
-<h3>Overview</h3>
-<p>NimbusDesk is a helpdesk ticketing and customer support platform.</p>
+<div class="card">
+<h3>NovaBuild</h3>
+<p>BIM platform for architects and civil engineers with real-time collaboration.</p>
+<b>License:</b> Named User License
+</div>
 
-<h3>Key Features</h3>
+<div class="card">
+<h3>NovaPLM</h3>
+<p>Cloud Product Lifecycle Management to manage product data and approvals.</p>
+<b>License:</b> Enterprise Subscription
+</div>
+
+<div class="card">
+<h3>NovaCAM</h3>
+<p>Manufacturing CAM software to generate CNC machining instructions and optimize toolpaths.</p>
+<b>License:</b> Per-Machine License
+</div>
+
+</div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing">
+<h2>Licensing & Pricing</h2>
+<div class="pricing">
 <ul>
-<li>Ticket management system</li>
-<li>Live chat support</li>
-<li>Knowledge base portal</li>
-<li>SLA tracking</li>
-<li>Customer portal</li>
+<li>Individual License – Single user</li>
+<li>Team License – Up to 10 users</li>
+<li>Business License – Unlimited organization users</li>
+<li>Student License – Free for 1 year (verified students)</li>
 </ul>
+<p>All plans include software updates, cloud storage, and technical support.</p>
+</div>
+</section>
 
-<h3>Pricing</h3>
-<p>Basic: $20 per agent per month</p>
-<p>Growth: $45 per agent per month</p>
-<p>Enterprise: $80 per agent per month</p>
-
-<h3>Best Use Case</h3>
-<p>Ideal for customer service teams and support centers.</p>
-
-<hr>
-
-<h2>Product 3: NimbusAnalytics</h2>
-
-<h3>Overview</h3>
-<p>NimbusAnalytics is a reporting and dashboard platform that provides business insights.</p>
-
-<h3>Key Features</h3>
-<ul>
-<li>Interactive dashboards</li>
-<li>Custom reports</li>
-<li>Forecasting tools</li>
-<li>Data visualization charts</li>
-<li>Export reports to Excel and PDF</li>
-</ul>
-
-<h3>Pricing</h3>
-<p>Standard: $40 per user per month</p>
-<p>Advanced: $75 per user per month</p>
-
-<h3>Best Use Case</h3>
-<p>Used by managers and analysts who need performance tracking and reporting.</p>
-
-<hr>
-
-<h2>Product 4: NimbusMarketing</h2>
-
-<h3>Overview</h3>
-<p>NimbusMarketing is a marketing automation platform designed to manage campaigns and nurture leads.</p>
-
-<h3>Key Features</h3>
-<ul>
-<li>Email marketing campaigns</li>
-<li>Lead scoring</li>
-<li>Landing page builder</li>
-<li>Marketing automation workflows</li>
-<li>Campaign performance analytics</li>
-</ul>
-
-<h3>Pricing</h3>
-<p>Starter: $30 per month (2,000 contacts)</p>
-<p>Growth: $70 per month (10,000 contacts)</p>
-<p>Pro: $120 per month (50,000 contacts)</p>
-
-<h3>Best Use Case</h3>
-<p>Designed for marketing and digital growth teams.</p>
-
-<hr>
-
-<h2>Product 5: NimbusBilling</h2>
-
-<h3>Overview</h3>
-<p>NimbusBilling is a subscription billing and invoicing platform.</p>
-
-<h3>Key Features</h3>
-<ul>
-<li>Recurring subscription billing</li>
-<li>Invoice generation</li>
-<li>Payment tracking</li>
-<li>Tax calculations</li>
-<li>Revenue reporting</li>
-</ul>
-
-<h3>Pricing</h3>
-<p>Basic: $15 per month</p>
-<p>Business: $40 per month</p>
-<p>Enterprise: $90 per month</p>
-
-<h3>Supported Payment Methods</h3>
-<p>Credit card, UPI, and bank transfer.</p>
-
-<hr>
-
-<h2>General Information</h2>
-
-<h3>Deployment</h3>
-<p>All NimbusTech products are cloud hosted and accessible through a web browser. No installation is required.</p>
-
-<h3>Free Trial</h3>
-<p>NimbusTech offers a 14-day free trial for all products.</p>
-
-<h3>Support</h3>
-<p>Email: support@nimbustech.com</p>
-<p>Support hours: Monday to Friday, 9 AM to 6 PM IST.</p>
-
-<h3>Integrations</h3>
-<p>Google Workspace, Outlook, Slack, Zoom, and REST API integrations are available.</p>
-
-<hr>
-
+<!-- FAQ -->
+<section id="faq" class="section-gray">
 <h2>Frequently Asked Questions</h2>
 
-<h3>Do you offer a free trial?</h3>
-<p>Yes, all products include a 14-day free trial with full features.</p>
+<div class="faq-item">
+<div class="faq-question">Do you offer a free trial?</div>
+<div class="faq-answer">Yes. Every product includes a 14-day free trial.</div>
+</div>
 
-<h3>Is training provided?</h3>
-<p>Yes, onboarding training and documentation are provided for all customers.</p>
+<div class="faq-item">
+<div class="faq-question">Can I cancel my subscription?</div>
+<div class="faq-answer">Monthly subscriptions can be cancelled anytime. Annual subscriptions are non-refundable.</div>
+</div>
 
-<h3>Can I upgrade plans later?</h3>
-<p>Yes, customers can upgrade or downgrade subscription plans at any time.</p>
+<div class="faq-item">
+<div class="faq-question">Do you provide student licenses?</div>
+<div class="faq-answer">Yes. Students and educators can apply for a free educational license.</div>
+</div>
 
-<h3>Is the software mobile friendly?</h3>
-<p>Yes, all products work on mobile browsers and tablets.</p>
+<div class="faq-item">
+<div class="faq-question">Is technical support included?</div>
+<div class="faq-answer">Yes. Paid plans include email and chat support. Enterprise includes 24/7 phone support.</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question">Do the products work offline?</div>
+<div class="faq-answer">Yes, but internet verification is required once every 14 days.</div>
+</div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<h2>Contact Sales</h2>
+
+<form onsubmit="showMessage(event)">
+<label>Full Name</label>
+<input type="text" required>
+
+<label>Email</label>
+<input type="email" required>
+
+<label>Company</label>
+<input type="text">
+
+<label>Product Interested In</label>
+<select>
+<option>NovaCAD</option>
+<option>NovaSim</option>
+<option>NovaBuild</option>
+<option>NovaPLM</option>
+<option>NovaCAM</option>
+</select>
+
+<label>Message</label>
+<textarea rows="4"></textarea>
+
+<button type="submit">Submit</button>
+</form>
+
+<p id="successMsg" style="color:green;font-weight:bold"></p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+<p>© 2026 NovaWorks Technologies</p>
+<p>Email: sales@novaworks.com | Support: support@novaworks.com</p>
+<p>Headquarters: San Jose, California</p>
+</footer>
+
+<script>
+/* FAQ Toggle */
+document.querySelectorAll(".faq-question").forEach(q=>{
+  q.addEventListener("click",()=>{
+    const ans=q.nextElementSibling;
+    ans.style.display = ans.style.display==="block"?"none":"block";
+  });
+});
+
+/* Fake form submit (for demo) */
+function showMessage(e){
+    e.preventDefault();
+    document.getElementById("successMsg").innerText=
+    "Thank you! Our sales team will contact you shortly.";
+}
+</script>
 
 </body>
 </html>
